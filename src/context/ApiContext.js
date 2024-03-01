@@ -5,9 +5,10 @@ export const ApiContext = createContext([]);
 
 export const ApiProvider = ({ children }) => {
  const [fav , setFav] =useState([])
+ const [details, setDetails] =useState([]);
  
   return (
-    <ApiContext.Provider value={{ fav,setFav }}>
+    <ApiContext.Provider value={{ fav,setFav,details, setDetails  }}>
       {children}
     </ApiContext.Provider>
   );

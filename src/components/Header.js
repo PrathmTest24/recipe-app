@@ -30,18 +30,9 @@ function Header() {
     }
   }
   function handleClick(e) {
-    //  setSearchParam(e.target.innerText)
     console.log(filteredUsers)
-    //  setFilteredUsers([""])
   }
 
-  // -------------------------------------------------------------------------------------------
-
-
-  // const favArrayLength = api.fav ? api.fav.length : 0;
-  // setRes(favArrayLength);
-  console.log(api.fav.length)
-  // -------------------------------------------------------------------------------------
 
 
 
@@ -50,7 +41,6 @@ function Header() {
 
     const res = await fetch(`https://dummyjson.com/recipes/search?q=${searchParam}`)
     const data = await res.json();
-    //   console.log(data)  
 
 
 
